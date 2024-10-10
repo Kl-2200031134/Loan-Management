@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </nav>
+    
+    <div class="container">
+        <h2>Login</h2>
+        <form action="LoginServlet" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="role">Login as:</label>
+            <select id="role" name="role">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+                <option value="lender">Lender</option>
+                <option value="borrower">Borrower</option>
+                <option value="financial_analyst">Financial Analyst</option>
+            </select>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
